@@ -35,7 +35,7 @@ classifier_knn <- knn(train = train_scale,
                       k = 1)
 classifier_knn
   
-# Confusiin Matrix
+# Confusion Matrix
 cm <- table(test_cl$Species, classifier_knn)
 cm
   
