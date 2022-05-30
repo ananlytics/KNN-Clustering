@@ -7,32 +7,39 @@
 install.packages("e1071")
 install.packages("caTools")
 install.packages("class")
-  
+```
+```ruby  
 # Loading package
 library(e1071)
 library(caTools)
 library(class)
-  
+```
+```ruby  
 # Loading data
 data(iris)
 head(iris)
-  
+```
+```ruby  
 # Splitting data into train
 # and test data
 split <- sample.split(iris, SplitRatio = 0.7)
 train_cl <- subset(iris, split == "TRUE")
 test_cl <- subset(iris, split == "FALSE")
-  
+```
+```ruby  
 # Feature Scaling
 train_scale <- scale(train_cl[, 1:4])
 test_scale <- scale(test_cl[, 1:4])
-  
+```
+```ruby  
 # Fitting KNN Model 
 # to training dataset
 classifier_knn <- knn(train = train_scale,
                       test = test_scale,
                       cl = train_cl$Species,
                       k = 1)
+```                      
+```ruby                      
 classifier_knn
   
 # Confusion Matrix
