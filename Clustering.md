@@ -9,7 +9,7 @@ install.packages("caTools")
 install.packages("class")
 install.packages("ggplot2")
 ```
-We will use four libraries for this projects.
+# We will use four libraries for this projects.
 
 ```ruby  
 # Loading package
@@ -18,7 +18,7 @@ library(caTools)
 library(class)
 library(ggplot2)
 ```
-We are using iris dataset(available on R).
+# We are using iris dataset(available on R).
 
 ```ruby  
 # Loading data
@@ -46,7 +46,7 @@ classifier_knn <- knn(train = train_scale,
                       k = 1)
 ``` 
 
-We can use different K-Values and check accuracy. Generally best accuracy is near Knee point.
+# We can use different K-Values and check accuracy. Generally best accuracy is near Knee point.
 
 ```ruby                      
 classifier_knn
@@ -101,6 +101,6 @@ misClassError <- mean(classifier_knn != test_cl$Species)
 print(paste('Accuracy =', 1-misClassError))
 
 ```
-Plotting model to visualize:Once we have identified best K-value, we can plot model to generate insights.
+# Plotting model to visualize:Once we have identified best K-value, we can plot model to generate insights.
 
 ![1](https://user-images.githubusercontent.com/104814594/170922428-97f0479e-ecc6-4a24-8bda-31a04713cf4e.JPG)
