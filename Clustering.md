@@ -101,6 +101,6 @@ misClassError <- mean(classifier_knn != test_cl$Species)
 print(paste('Accuracy =', 1-misClassError))
 
 ```
-## Plotting model to visualize:Once we have identified best K-value, we can plot model to generate insights.
+### Plotting model to visualize:Once we have identified best K-value, we can plot model to generate insights.
 
 ![1](https://user-images.githubusercontent.com/104814594/170922428-97f0479e-ecc6-4a24-8bda-31a04713cf4e.JPG)
