@@ -38,8 +38,7 @@ train_scale <- scale(train_cl[, 1:4])
 test_scale <- scale(test_cl[, 1:4])
 ```
 ```ruby  
-# Fitting KNN Model 
-# to training dataset
+# Devising Model Fitness using Training Data set (80% if available data)
 classifier_knn <- knn(train = train_scale,
                       test = test_scale,
                       cl = train_cl$Species,
