@@ -3,7 +3,7 @@
 
 
 ```ruby
-# Installing Packages
+# Installation of Packages (directly load them if already installed)
 install.packages("e1071")
 install.packages("caTools")
 install.packages("class")
@@ -12,7 +12,7 @@ install.packages("ggplot2")
 ## We will use four libraries for this projects.
 
 ```ruby  
-# Loading package
+# Loading above installed packages 
 library(e1071)
 library(caTools)
 library(class)
@@ -21,7 +21,7 @@ library(ggplot2)
 ## We are using iris dataset(available on R).
 
 ```ruby  
-# Loading data
+# Viewing first few rows of the data
 data(iris)
 head(iris)
 ```
