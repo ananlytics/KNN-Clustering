@@ -26,8 +26,8 @@ data(iris)
 head(iris)
 ```
 ```ruby  
-# Splitting data into train
-# and test data
+# Splitting data into training and testing data sets
+
 split <- sample.split(iris, SplitRatio = 0.8)
 train_cl <- subset(iris, split == "TRUE")
 test_cl <- subset(iris, split == "FALSE")
