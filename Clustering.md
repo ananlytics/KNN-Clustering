@@ -3,7 +3,7 @@
 
 
 ```ruby
-# Installation of Packages (directly load them if already installed)
+# Installation of Packages
 install.packages("e1071")
 install.packages("caTools")
 install.packages("class")
